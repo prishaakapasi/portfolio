@@ -1,16 +1,50 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site, showcasing my work across engineering, UX/UI, and graphic design.
 
-Currently, two official plugins are available:
+**Live site:** [prishaakapasi.com](https://www.prishaakapasi.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<br>
 
-## React Compiler
+## overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This site brings together case studies from my work as a product engineer, designer, and researcher, spanning neurotech, robot learning, mobile development, and visual design.
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## pages
+
+- **[About Me](https://www.prishaakapasi.com/)** — background and intro
+- **[Graphic Design](https://www.prishaakapasi.com/graphic-design)** — brand and visual design work
+- **[UX/UI](https://www.prishaakapasi.com/ux-ui)** — product and interface design case studies
+- **[Engineering](https://www.prishaakapasi.com/engineering)** — technical projects and builds
+
+<br>
+
+## tech stack
+
+`React` &nbsp;`Next.js`
+
+<br>
+
+## getting started
+
+```bash
+# clone the repo
+git clone https://github.com/prishaakapasi/portfolio.git
+cd portfolio
+
+# install dependencies
+npm install
+
+# run locally
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+<br>
+
+## built by
+
+[Prishaa Kapasi](https://prishaakapasi.com) — [LinkedIn](https://www.linkedin.com/in/prishaa-kapasi-87b73825b)
