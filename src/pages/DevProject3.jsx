@@ -4,7 +4,7 @@ import coverImg from '../assets/Frame 6 (1).png'
 const PROJECT = {
   title:           'Community Governance Card Maker',
   subtitle:        'A tool for making decentralized governance systems more transparent, structured, and accessible',
-  tag:             'Development',
+  tag:             'Engineering',
   role:            'Researcher at Princeton Human Computer Interaction Lab with Team of 3',
   timeline:        'Dec 2025 – Present',
   techStack:       'HTML, CSS, JavaScript, Figma, Supabase',

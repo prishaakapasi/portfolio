@@ -10,7 +10,7 @@ const LINKS = [
   { to: '/', end: true, icon: aboutIcon, label: 'ABOUT ME', isAbout: true },
   { to: '/graphic-design', icon: graphicDesignIcon, label: 'GRAPHIC DESIGN' },
   { to: '/ux-ui', icon: computerIcon, label: 'UX/UI' },
-  { to: '/development', icon: developmentIcon, label: 'DEVELOPMENT' },
+  { to: '/engineering', icon: developmentIcon, label: 'ENGINEERING' },
 ]
 
 export default function Navbar() {

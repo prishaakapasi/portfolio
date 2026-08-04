@@ -4,7 +4,7 @@ import coverImg from '../assets/uxdesignimages/tsasite.png'
 const PROJECT = {
   title:           'TSA Website Redesign & Accessibility Audit',
   subtitle:        'Redesigning and optimizing a high-traffic student platform for usability, engagement, and accessibility',
-  tag:             'Development',
+  tag:             'Engineering',
   role:            'Web Designer & Developer in Team of 2',
   timeline:        '2024 – 2025',
   techStack:       'Wix',

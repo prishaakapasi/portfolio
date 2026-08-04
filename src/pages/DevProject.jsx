@@ -16,7 +16,7 @@ export default function DevProject({ project }) {
           <div className="cs-meta fade-in fade-in-delay-4">
             {project.role && <span><strong>Role:</strong> {project.role}</span>}
             {project.timeline && <span><strong>Timeline:</strong> {project.timeline}</span>}
-            {project.techStack && <span><strong>Tech Stack:</strong> {project.techStack}</span>}
+            {project.techStack && <span><strong>{project.techStackLabel || 'Tech Stack'}:</strong> {project.techStack}</span>}
           </div>
           <div className="cs-links fade-in fade-in-delay-4">
             {project.github && (
@@ -29,6 +29,12 @@ export default function DevProject({ project }) {
                 <span>Live Site →</span>
               </a>
             )}
+            {/* Extra labelled links, e.g. a dataset or model repo */}
+            {project.links && project.links.map((link, i) => (
+              <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="cs-link-btn">
+                <span>{link.label} →</span>
+              </a>
+            ))}
           </div>
         </div>
         <div className="cs-hero-img-wrap fade-in fade-in-delay-3">
@@ -46,10 +52,35 @@ export default function DevProject({ project }) {
       {/* ── CONTENT ── */}
       <div className="cs-body">
 
-        {/* Overview */}
+        {/* Overview — with the demo video alongside it when a project has one */}
         <section className="cs-section">
           <h2 className="cs-section-title">Overview</h2>
-          <p className="cs-text">{project.overview}</p>
+          {project.video ? (
+            /* Text left / video right on desktop, stacked on mobile */
+            <div className="cs-video-row">
+              <div className="cs-video-copy">
+                <p className="cs-text">{project.overview}</p>
+                {project.videoText &&
+                  (Array.isArray(project.videoText) ? project.videoText : [project.videoText])
+                    .map((para, i) => <p key={i} className="cs-text">{para}</p>)}
+              </div>
+              <div className="cs-video-wrap">
+                <video
+                  className="cs-video"
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={`${project.title} demo video`}
+                />
+                {project.videoCaption && <p className="cs-img-caption">{project.videoCaption}</p>}
+              </div>
+            </div>
+          ) : (
+            <p className="cs-text">{project.overview}</p>
+          )}
           {project.overviewImages && project.overviewImages.length > 0 && (
             <div className="cs-img-grid">
               {project.overviewImages.map((img, i) => (
@@ -64,7 +95,7 @@ export default function DevProject({ project }) {
 
         {/* Tech Stack */}
         <section className="cs-section cs-section--accent">
-          <h2 className="cs-section-title">Tech Stack</h2>
+          <h2 className="cs-section-title">{project.techStackTitle || 'Tech Stack'}</h2>
           <p className="cs-text">{project.techStackDetail}</p>
           {project.techStackImages && project.techStackImages.length > 0 && (
             <div className="cs-img-grid">
@@ -125,6 +156,17 @@ export default function DevProject({ project }) {
             </ul>
           )}
         </section>
+
+        {/* Next Steps — only renders for projects that define them */}
+        {project.nextSteps && project.nextSteps.length > 0 && (
+          <section className="cs-section cs-section--accent">
+            <h2 className="cs-section-title">Next Steps</h2>
+            {project.nextStepsIntro && <p className="cs-text">{project.nextStepsIntro}</p>}
+            <ul className="cs-outcomes">
+              {project.nextSteps.map((s, i) => <li key={i}>{s}</li>)}
+            </ul>
+          </section>
+        )}
 
       </div>
 

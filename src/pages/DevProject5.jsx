@@ -5,7 +5,7 @@ const PROJECT = {
   title: "Synora",
   subtitle:
     "An adaptive application supporting speech and motor function for individuals living with Parkinson's disease",
-  tag: "Development",
+  tag: "Engineering",
   role: "Developer & Designer in Team of 3",
   timeline: "Apr 2026",
   techStack: "React, CSS, Python, JavaScript, Machine Learning, Figma",

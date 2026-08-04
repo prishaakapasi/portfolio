@@ -918,6 +918,47 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 
+/* Demo video: text left / video right on desktop, stacked on narrow screens */
+.cs-video-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.cs-video-copy {
+  flex: 1 1 340px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.cs-video-copy .cs-text {
+  max-width: none;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.cs-video-copy .cs-text + .cs-text {
+  margin-top: 0.7rem;
+}
+
+.cs-video-wrap {
+  flex: 0 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-video {
+  width: 100%;
+  max-width: 340px;
+  max-height: 70vh;
+  display: block;
+  border-radius: 10px;
+}
+
 .cs-img-caption {
   font-family: "Andika", sans-serif;
   font-size: 0.78rem;
@@ -950,6 +991,8 @@ body {
   .cs-hero-img-wrap { width: 100%; }
   .cs-title { font-size: 2.5rem; }
   .cs-body { padding: 2rem 2.5rem 3rem; }
+  .cs-video-row { flex-direction: column; align-items: stretch; gap: 1.5rem; }
+  .cs-video-wrap { align-items: center; }
 }
 
 @media (max-width: 640px) {
@@ -958,6 +1001,7 @@ body {
   .cs-body { padding: 1.5rem 1.2rem 2rem; }
   .cs-card-grid { grid-template-columns: 1fr; }
   .cs-img-grid { grid-template-columns: 1fr; }
+  .cs-video { max-width: 100%; max-height: 60vh; }
 }
 
 .project-card {

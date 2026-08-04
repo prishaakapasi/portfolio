@@ -4,7 +4,7 @@ import coverImg from '../assets/uxdesignimages/gaias.png'
 const PROJECT = {
   title:           'Gaias Libertas',
   subtitle:        'A multilingual website designed to amplify a Brazilian nonprofit’s mission through immersive, nature-inspired storytelling',
-  tag:             'Development',
+  tag:             'Engineering',
   role:            'Web Designer & Developer',
   timeline:        '2025',
   techStack:       'Wix, Figma',

@@ -4,14 +4,16 @@ import gaias from '../assets/uxdesignimages/gaias.png'
 import recipemaker from '../assets/Frame 6 (1).png'
 import tsasite from '../assets/uxdesignimages/tsasite.png'
 import synora from '../assets/Frame 8.png'
+import robotarm from '../assets/roboticsimages/so101arm.png'
 
 // ─── EDIT PROJECT CARD TITLES HERE ───────────────────────────────────────────
 const PROJECTS = [
-  { image: synora,      title: 'Synora',        subtitle: 'Adaptive application supporting speech and motor function for individuals with Parkinson\'s disease', route: '/development/5' },
-  { image: recipemaker, title: 'Community Governance Card Maker', subtitle: 'Web application for social media platforms to develop governance schema', route: '/development/3' },
-  { image: gaias,       title: 'Gaias Libertas',        subtitle: 'Website for animal rights nonprofit', route: '/development/2' },
-  { image: paintpalz,   title: 'PaintPalz',    subtitle: 'Therapeutic Application for Pediatric Patients', route: '/development/1' },
-  { image: tsasite,     title: 'Colorado TSA Website',     subtitle: 'Website for Technology Student Association of Colorado', route: '/development/4' },
+  { image: robotarm,    title: 'Autonomous Robot Arm', subtitle: '6-DoF robotic arm taught to pick and place autonomously through imitation learning', route: '/engineering/6' },
+  { image: synora,      title: 'Synora',     subtitle: 'Adaptive application supporting speech and motor function for individuals with Parkinson\'s disease', route: '/engineering/5' },
+  { image: recipemaker, title: 'Community Governance Card Maker', subtitle: 'Web application for social media platforms to develop governance schema', route: '/engineering/3' },
+  { image: gaias,       title: 'Gaias Libertas',        subtitle: 'Website for animal rights nonprofit', route: '/engineering/2' },
+  { image: paintpalz,   title: 'PaintPalz',    subtitle: 'Therapeutic Application for Pediatric Patients', route: '/engineering/1' },
+  { image: tsasite,     title: 'Colorado TSA Website',     subtitle: 'Website for Technology Student Association of Colorado', route: '/engineering/4' },
 ]
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -23,8 +25,8 @@ export default function Development() {
       {/* ── PAGE HERO ── */}
       <section className="gd-hero">
         <div className="gd-hero-text">
-          <h1 className="gd-hero-title fade-in fade-in-delay-1">DEVELOPMENT</h1>
-          <p className="gd-hero-subtitle fade-in fade-in-delay-2">Building things that work</p>
+          <h1 className="gd-hero-title fade-in fade-in-delay-1">ENGINEERING</h1>
+          <p className="gd-hero-subtitle fade-in fade-in-delay-2">Software, robotics, and things that work</p>
         </div>
         <div className="gd-hero-dots fade-in fade-in-delay-3">
           {[...Array(5)].map((_, i) => <div key={i} className="skills-dot" />)}

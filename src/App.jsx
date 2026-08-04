@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -14,6 +14,7 @@ import DevProject2 from './pages/DevProject2'
 import DevProject3 from './pages/DevProject3'
 import DevProject4 from './pages/DevProject4'
 import DevProject5 from './pages/DevProject5'
+import DevProject6 from './pages/DevProject6'
 import './App.css'
 
 function App() {
@@ -29,12 +30,15 @@ function App() {
           <Route path="/ux-ui/5" element={<CaseStudy5 />} />
           <Route path="/ux-ui/6" element={<CaseStudy6 />} />
           <Route path="/ux-ui/7" element={<CaseStudy7 />} />
-          <Route path="/development" element={<Development />} />
-          <Route path="/development/1" element={<DevProject1 />} />
-          <Route path="/development/2" element={<DevProject2 />} />
-          <Route path="/development/3" element={<DevProject3 />} />
-          <Route path="/development/4" element={<DevProject4 />} />
-          <Route path="/development/5" element={<DevProject5 />} />
+          <Route path="/engineering" element={<Development />} />
+          <Route path="/engineering/1" element={<DevProject1 />} />
+          <Route path="/engineering/2" element={<DevProject2 />} />
+          <Route path="/engineering/3" element={<DevProject3 />} />
+          <Route path="/engineering/4" element={<DevProject4 />} />
+          <Route path="/engineering/5" element={<DevProject5 />} />
+          <Route path="/engineering/6" element={<DevProject6 />} />
+          {/* old /development links redirect to /engineering */}
+          <Route path="/development/*" element={<Navigate to="/engineering" replace />} />
         </Routes>
         <Footer />
       </div>

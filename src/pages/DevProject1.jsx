@@ -4,7 +4,7 @@ import coverImg from '../assets/uxdesignimages/paintpalz.png'
 const PROJECT = {
   title:           'PaintPalz',
   subtitle:        'A therapeutic creative app designed to support pediatric hospital patients through art and connection',
-  tag:             'Development',
+  tag:             'Engineering',
   role:            'Product Designer, UI/UX Designer, Mobile Developer',
   timeline:        'Jun 2024 –  Jun 2025',
   techStack:       'React Native, Expo, JavaScript, Supabase, Figma, Adobe Illustrator',
@@ -16,7 +16,7 @@ const PROJECT = {
     'PaintPalz is a mobile app designed as a therapeutic outlet for pediatric hospital patients. Inspired by my experiences observing how technology can transform hospital environments, I created PaintPalz to help young patients feel less isolated and more emotionally supported during their stay. The app fosters creativity, self-expression, and connection through interactive art-based experiences and a shared community space.',
 
   techStackDetail:
-    'PaintPalz was developed using React Native and Expo to ensure seamless cross-platform compatibility across iOS and Android devices. Supabase supports data storage and user-generated content, including artwork and profiles. The interface was designed in Figma through iterative wireframing and prototyping, while custom graphics—including over 100 avatars and UI elements—were created in Adobe Illustrator. The system is built with modular, scalable components to support future expansion into real-world hospital settings.',
+    'PaintPalz was developed using React Native and Expo to ensure seamless cross-platform compatibility across iOS and Android devices. Supabase supports data storage and user-generated content, including artwork and profiles. The interface was designed in Figma through iterative wireframing and prototyping, while custom graphics, including over 100 avatars and UI elements, were created in Adobe Illustrator. The system is built with modular, scalable components to support future expansion into real-world hospital settings.',
 
   features:
     'The app combines guided and open-ended creative tools with social and gamified elements to encourage consistent engagement and emotional expression.',
